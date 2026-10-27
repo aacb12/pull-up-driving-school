@@ -131,7 +131,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .hero-badge-icon { width: 42px; height: 42px; display: grid; place-items: center; background: var(--gold-tint); border-radius: 10px; font-size: 1.3rem; }
 .hero-badge strong { display: block; color: var(--white); }
 .hero-badge span { font-size: .85rem; color: var(--muted); }
-.hero-price { position: absolute; right: -14px; top: 26px; background: var(--gold-grad); color: var(--bg); border-radius: 16px; padding: 12px 18px; text-align: center; box-shadow: var(--shadow-lg); line-height: 1.1; }
+.hero-price { position: absolute; left: -14px; top: 26px; background: var(--gold-grad); color: var(--bg); border-radius: 16px; padding: 12px 18px; text-align: center; box-shadow: var(--shadow-lg); line-height: 1.1; }
 .hero-price span { display: block; font-size: .75rem; font-weight: 700; }
 .hero-price strong { display: block; font-size: 2rem; font-weight: 800; }
 
@@ -293,7 +293,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .hero-inner, .about, .areas, .contact, .learn { grid-template-columns: 1fr; }
   .hero-media { max-width: 560px; }
   .hero-badge { left: 12px; bottom: 16px; }
-  .hero-price { right: 12px; top: 12px; }
+  .hero-price { left: 12px; top: 12px; }
   .about { gap: 40px; }
   .map { position: static; min-height: 320px; }
   .map iframe { min-height: 320px; }
