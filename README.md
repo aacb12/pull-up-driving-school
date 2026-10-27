@@ -7,6 +7,6 @@ Plain HTML/CSS/JS, no build step. Open `index.html` or run `python3 -m http.serv
 ## Before going live
 - Remove `<meta name="robots" content="noindex, nofollow">` from `index.html`
 - Update the `og:image` / JSON-LD image URLs to the real domain
-- Confirm prices (the current live site shows two different price lists)
+- Prices use the £50 / £70 / £90 / £50 list; update the old site to match if it stays live
 - Redirect the old WordPress URLs (`/about-us/`, `/our-services/`, `/areas-covered/`, `/contact-us/`) to the new sections
 - Carry over the terms, privacy and cookie policy pages
