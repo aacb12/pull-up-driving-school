@@ -79,6 +79,18 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+// Pass gallery: show a few photos until "See all" is pressed
+const passGrid = document.getElementById("pass-grid");
+const passToggle = document.getElementById("pass-toggle");
+passGrid.classList.add("collapsed");
+passToggle.hidden = false;
+passToggle.addEventListener("click", () => {
+  const collapsed = passGrid.classList.toggle("collapsed");
+  passToggle.setAttribute("aria-expanded", !collapsed);
+  passToggle.textContent = collapsed ? "See more" : "Show less";
+  if (collapsed) passGrid.scrollIntoView({ block: "start" });
+});
+
 // Placeholder links (e.g. social profiles not added yet) shouldn't jump to the top
 document.querySelectorAll('a[href="#"]').forEach((link) =>
   link.addEventListener("click", (e) => e.preventDefault())

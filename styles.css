@@ -195,6 +195,9 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .pass-cta:hover { transform: translateY(-4px); }
 .pass-cta strong { font-size: 1.5rem; line-height: 1.15; font-weight: 800; }
 .pass-cta span { font-weight: 700; margin-top: 6px; }
+/* Collapsed gallery (set by script.js): first 11 photos + the CTA tile */
+.pass-grid.collapsed figure:nth-of-type(n+12) { display: none; }
+.pass-more { text-align: center; margin-top: 28px; }
 
 /* About */
 .section-feature { background: radial-gradient(circle at 100% 50%, rgba(212,166,60,.10), transparent 45%), var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -304,6 +307,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .map { position: static; min-height: 320px; }
   .map iframe { min-height: 320px; }
   .pass-grid { grid-template-columns: repeat(2, 1fr); }
+  .pass-grid.collapsed figure:nth-of-type(n+6) { display: none; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
 }
