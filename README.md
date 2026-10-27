@@ -10,3 +10,4 @@ Plain HTML/CSS/JS, no build step. Open `index.html` or run `python3 -m http.serv
 - Prices: £45 (1h), £70 (1h 30m), £90 (2h), refresher £45/hr; update the old site to match if it stays live
 - Redirect the old WordPress URLs (`/about-us/`, `/our-services/`, `/areas-covered/`, `/contact-us/`) to the new sections
 - Carry over the terms, privacy and cookie policy pages
+- Replace the placeholder social media links in the footer (`href="#"`) with real profile URLs

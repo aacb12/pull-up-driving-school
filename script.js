@@ -79,4 +79,9 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+// Placeholder links (e.g. social profiles not added yet) shouldn't jump to the top
+document.querySelectorAll('a[href="#"]').forEach((link) =>
+  link.addEventListener("click", (e) => e.preventDefault())
+);
+
 document.getElementById("year").textContent = new Date().getFullYear();

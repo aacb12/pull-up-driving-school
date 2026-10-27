@@ -256,6 +256,12 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .site-footer h4 { font-size: 1rem; margin-bottom: 14px; }
 .site-footer a, .footer-inner > div > span { display: block; color: var(--muted); text-decoration: none; margin-bottom: 8px; word-break: break-word; }
 .site-footer a:hover { color: var(--gold-light); }
+.socials { display: flex; gap: 10px; margin-top: 18px; }
+.site-footer .socials a { display: grid; place-items: center; width: 42px; height: 42px; margin: 0; border-radius: 50%; border: 1px solid var(--border); color: var(--text); transition: border-color .2s, color .2s, transform .2s; }
+.site-footer .socials a:hover { border-color: var(--gold); color: var(--gold-light); transform: translateY(-2px); }
+.socials svg { width: 19px; height: 19px; }
+.icon-stroke { fill: none; stroke: currentColor; stroke-width: 2; }
+.icon-stroke .dot { fill: currentColor; stroke: none; }
 .footer-legal { border-top: 1px solid var(--border); margin-top: 48px; padding: 22px 20px; font-size: .85rem; }
 .footer-legal p { margin: 0; }
 
