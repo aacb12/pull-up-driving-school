@@ -60,7 +60,7 @@ document.getElementById("send-email").addEventListener("click", () => {
 
 // Fade sections in as they scroll into view
 const revealEls = document.querySelectorAll(
-  ".section-head, .lesson-card, .learn, .price-card, .pass-grid > *, .about > *, .area-list, .map, .faq details, .contact > *"
+  ".section-head, .lesson-card, .learn, .price-card, .pass-grid > *, .about > *, .area-card, .map, .faq details, .contact > *"
 );
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver(

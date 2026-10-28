@@ -131,7 +131,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .hero-badge-icon { width: 42px; height: 42px; display: grid; place-items: center; background: var(--gold-tint); border-radius: 10px; font-size: 1.3rem; }
 .hero-badge strong { display: block; color: var(--white); }
 .hero-badge span { font-size: .85rem; color: var(--muted); }
-.hero-price { position: absolute; left: -14px; top: 26px; background: var(--gold-grad); color: var(--bg); border-radius: 16px; padding: 12px 18px; text-align: center; box-shadow: var(--shadow-lg); line-height: 1.1; }
+.hero-price { position: absolute; right: -14px; top: 26px; background: var(--gold-grad); color: var(--bg); border-radius: 16px; padding: 12px 18px; text-align: center; box-shadow: var(--shadow-lg); line-height: 1.1; }
 .hero-price span { display: block; font-size: .75rem; font-weight: 700; }
 .hero-price strong { display: block; font-size: 2rem; font-weight: 800; }
 
@@ -209,12 +209,12 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .checklist li::before { content: "✓"; width: 26px; height: 26px; flex-shrink: 0; border-radius: 50%; background: var(--gold-grad); color: var(--bg); display: grid; place-items: center; font-weight: 800; font-size: .85rem; }
 
 /* Areas */
-.areas { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: start; }
-.area-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.area-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-size: .95rem; }
-.area-list strong { display: block; color: var(--white); font-weight: 700; }
-.area-list span { display: inline-block; margin-top: 4px; font-size: .8rem; color: var(--gold); font-weight: 700; }
-.area-note { margin-top: 18px; color: var(--muted); }
+.areas { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.area-card { display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--gold-line); border-radius: 16px; padding: 20px 22px; margin-bottom: 24px; }
+.area-card strong { display: block; color: var(--white); font-size: 1.15rem; }
+.area-card div > span { color: var(--muted); font-size: .95rem; }
+.area-icon { width: 48px; height: 48px; flex-shrink: 0; border-radius: 12px; background: var(--gold-grad); color: var(--bg); display: grid; place-items: center; }
+.area-icon svg { width: 24px; height: 24px; }
 .map { border-radius: 20px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); height: 100%; min-height: 420px; position: sticky; top: 100px; background: var(--surface); }
 .map iframe { border: 0; width: 100%; height: 100%; min-height: 420px; display: block; }
 
@@ -301,7 +301,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .hero-inner, .about, .areas, .contact, .learn { grid-template-columns: 1fr; }
   .hero-media { max-width: 560px; }
   .hero-badge { left: 12px; bottom: 16px; }
-  .hero-price { left: 12px; top: 12px; }
+  .hero-price { right: 12px; top: 12px; }
   .about { gap: 40px; }
   .map { position: static; min-height: 320px; }
   .map iframe { min-height: 320px; }
@@ -315,7 +315,7 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
   .section { padding: 72px 0; }
   .logo img { height: 38px; }
   .header-actions .btn { display: none; }
-  .lesson-grid, .price-grid, .area-list, .field-row { grid-template-columns: 1fr; }
+  .lesson-grid, .price-grid, .field-row { grid-template-columns: 1fr; }
   .learn { padding: 28px 22px; }
   .promo { flex-direction: column; align-items: flex-start; padding: 26px 22px; }
   .promo-price { flex-wrap: wrap; }
