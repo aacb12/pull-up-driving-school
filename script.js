@@ -1,5 +1,5 @@
 const PHONE = "447741405694";
-const EMAIL = "info@pullupdrivingschool.co.uk";
+const EMAIL = "puotl@outlook.com";
 
 // Mobile menu
 const toggle = document.querySelector(".nav-toggle");

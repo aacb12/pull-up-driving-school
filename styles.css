@@ -266,6 +266,23 @@ svg { width: 1.2em; height: 1.2em; fill: currentColor; flex-shrink: 0; }
 .icon-stroke .dot { fill: currentColor; stroke: none; }
 .footer-legal { border-top: 1px solid var(--border); margin-top: 48px; padding: 22px 20px; font-size: .85rem; }
 .footer-legal p { margin: 0; }
+.footer-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+.footer-legal-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.site-footer .footer-legal-links a { display: inline; margin: 0; }
+
+/* Legal pages and 404 */
+.legal-page .header-actions { margin-left: auto; }
+.legal { padding: 64px 0 96px; }
+.legal h1 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; }
+.legal h2 { font-size: 1.25rem; font-weight: 700; margin-top: 2em; }
+.legal ul { padding-left: 1.25em; margin: 0 0 1em; }
+.legal li { margin-bottom: .35em; }
+.legal li::marker { color: var(--gold); }
+.legal-back { margin-bottom: 1.5em; font-size: .92rem; }
+.legal-back a { text-decoration: none; }
+.legal-updated { color: var(--muted); font-size: .92rem; }
+.site-footer-compact { padding-top: 0; }
+.site-footer-compact .footer-legal { margin-top: 0; border-top: 0; }
 
 .mobile-bar { display: none; }
 

@@ -1,0 +1,26 @@
+# Cloudflare Pages redirects. Old WordPress URLs go to the matching part of the new site.
+/about-us               /#about           301
+/about-us/              /#about           301
+/our-services           /#lessons         301
+/our-services/          /#lessons         301
+/areas-covered          /#areas           301
+/areas-covered/         /#areas           301
+/contact-us             /#contact         301
+/contact-us/            /#contact         301
+/terms-and-conditions   /terms/           301
+/terms-and-conditions/  /terms/           301
+/privacy-statement-uk   /privacy/         301
+/privacy-statement-uk/  /privacy/         301
+/privacy-policy         /privacy/         301
+/privacy-policy/        /privacy/         301
+/cookie-policy          /privacy/#cookies 301
+/cookie-policy/         /privacy/#cookies 301
+/cookie-policy-uk       /privacy/#cookies 301
+/cookie-policy-uk/      /privacy/#cookies 301
+/disclaimer             /                 301
+/disclaimer/            /                 301
+/blog                   /                 301
+/blog/                  /                 301
+
+# Repo files that don't belong on the public site
+/README.md              /                 301
